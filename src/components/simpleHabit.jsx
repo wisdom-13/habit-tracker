@@ -1,9 +1,9 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 
 const SimpleHabit = (props) => {
 
   const [count, setCount] = useState(0);
-  const spanRef = useRef();
+  const spanRef = useRef;
 
   const handleIncrement = useCallback(() => {
     setCount(count + 1)
