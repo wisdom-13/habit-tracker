@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component, memo } from 'react';
 import Habit from './habit';
 import HabitAddForm from './habitAddForm';
 
-const Habits = (props) => {
+const Habits = memo((props) => {
 
   const handleIncrement = habit => {
     props.onIncrement(habit);
@@ -39,6 +39,6 @@ const Habits = (props) => {
       </button>
     </div>
   );
-}
+});
 
 export default Habits;

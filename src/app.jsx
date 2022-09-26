@@ -1,9 +1,9 @@
-import React, { Component, useState } from 'react';
+import React, { Component, memo, useState } from 'react';
 import './app.css';
 import Habits from './components/habits';
 import Navbar from './components/navbar';
 
-const App = (props) => {
+const App = memo((props) => {
 
   const [habits, setHabits] = useState(
     [
@@ -69,6 +69,6 @@ const App = (props) => {
       />
     </>
   );
-}
+});
 
 export default App;

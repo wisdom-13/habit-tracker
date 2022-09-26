@@ -1,6 +1,6 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { memo, useCallback, useEffect, useRef, useState } from 'react';
 
-const SimpleHabit = (props) => {
+const SimpleHabit = memo((props) => {
 
   const [count, setCount] = useState(0);
   const spanRef = useRef;
@@ -25,7 +25,7 @@ const SimpleHabit = (props) => {
       </button>
     </li>
   );
-};
+});
 
 export default SimpleHabit;
 
