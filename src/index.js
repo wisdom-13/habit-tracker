@@ -8,7 +8,6 @@ import '@fortawesome/fontawesome-free/js/all.js';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    test
   </React.StrictMode>,
   document.getElementById('root')
 );
